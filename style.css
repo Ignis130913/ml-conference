@@ -117,6 +117,17 @@ body {
 .active-link {
   color: var(--primaryHoverColor) !important;
 }
+@media screen and (max-width: 376px){
+  video{
+    width: 405px !important;
+  }
+  #speakers, #Contact{
+    width: 104% !important;
+  }
+  .container{
+    font-size: smaller;
+  }
+}
 
 /* NAVBAR MEDIA QUERY START */
 @media screen and (max-width: 991px) {
@@ -338,6 +349,7 @@ header {
   -ms-touch-action: pan-Y;
   touch-action: manipulation;
   -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .custom-carousel .owl-stage:after {
@@ -353,6 +365,7 @@ header {
   position: relative;
   overflow: hidden;
   -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .custom-carousel .owl-item,
@@ -360,15 +373,18 @@ header {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .custom-carousel .owl-item {
   min-height: 1px;
   float: left;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-touch-callout: none;
 }
 
@@ -506,6 +522,7 @@ header {
   cursor: pointer;
   z-index: 1;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   transition: transform 0.1s ease;
 }
 
@@ -573,7 +590,8 @@ header {
 }
 
 .about__content {
-  padding: 20px; /* Adjust padding to reduce the inner space */
+  padding: 20px;
+    /* Adjust padding to reduce the inner space */
 }
 
 .about__content h2 {
@@ -585,8 +603,14 @@ header {
 
 .about__content p {
   font-size: 14px; /* Reduce the font size of the paragraph */
-  line-height: 1.6;
-  color: #666;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
 }
 
 .statistics {
@@ -1798,6 +1822,7 @@ header {
 #stats,
 .count-particles {
   -webkit-user-select: none;
+  user-select: none;
   margin-top: 5px;
   margin-left: 5px;
 }
@@ -1865,3 +1890,5 @@ header {
     font-size: 15px;
   }
 }
+
+
