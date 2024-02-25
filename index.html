@@ -63,6 +63,10 @@
     <!-- PRELOADER START -->
     <div class="fakeLoader"></div>
     <!-- PRELOADER END   -->
+    <video autoplay loop muted id="video-background">
+        <source src="My Video.mp4" type="video/mp4">
+        <!-- Include additional source elements if needed for other video formats -->
+    </video>
     <audio autoplay loop>
         <source src="./Audio/Gabriel Light _ Feel Alive v2 (Official mid summer track 2021).mp3" type="audio/mp3">
         Your browser doesn't support the audio
@@ -99,11 +103,11 @@
                             </li>
                             <li class="nav-item custom-nav-item">
                                 <a class="nav-link custom-nav-link" id="PRC" aria-current="page"
-                                    href="#pricing">Pricing</a>
+                                    href="#pricing">Register</a>
                             </li>
                             <li class="nav-item custom-nav-item">
                                 <a class="nav-link custom-nav-link" id="SPN" aria-current="page"
-                                    href="#sponsors">Sponsors</a>
+                                    href="#sponsors">Location</a>
                             </li>
                             <li class="nav-item custom-nav-item">
                                 <a class="nav-link custom-nav-link" id="CNT" aria-current="page"
@@ -267,10 +271,7 @@
 
         <!-- <div id="particles-js"></div> 
         <div class="count-particles"> <span class="js-count-particles"></span></div> -->
-        <video autoplay loop muted id="video-background">
-            <source src="My Video.mp4" type="video/mp4">
-            <!-- Include additional source elements if needed for other video formats -->
-        </video>
+        
         
         <!-- <video autoplay loop muted>
             <source src="./Video/cityxcape-5727833.mp4" type="video/mp4">
@@ -311,6 +312,7 @@
     </section>
     <!-- SECTION - 1 END   -->
     <!-- SECTION - 2 START   -->
+    <div id="about-container">
     <div class="about-container">
     <section class="about_us d-flex align-items-center justify-content-center position-relative flex-column" id="about">
         <div class="about">
@@ -326,9 +328,10 @@
 
                 <div class="col-12 col-lg-6">
                     <div class="about__content">
-                        <h2>About Conference</h2>
-                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
-                        <p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        <h2 id="abt-h2">About Conference</h2>
+                        <div class="typewriter"><p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+                        It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
                     </div>
                 </div>
 
@@ -570,6 +573,7 @@
         </div> -->
     </section>
 </div>
+</div>
     <!-- SECTION - 2 END -->
 
     <!-- SECTION - 3 START -->
@@ -586,7 +590,8 @@
                     </div>
                 </div>
             </div>
-<table class=" schedule-table table table-bordered">
+<div id="t-cont">
+<table class=" schedule-table table table-bordered" id="table">
     <thead>
         <tr>
             <th class="table-main-head" scope="col">Time</th>
@@ -687,6 +692,7 @@
         </tr>
     </tbody>
 </table>
+</div>
             <!-- <div class="row gx-0 mb-5">
                 <div class="col-3 col-md-3">
                     <div class="schedule_btn wow animated fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
@@ -1718,6 +1724,7 @@
             </div>
         </div>
     </section>
+
     <!-- SECTION - 4 END   -->
 
     <!-- SECTION - 5 START   -->
@@ -3732,11 +3739,8 @@
                     <div class="contact-heading mb-5 mt-5 wow animated fadeInDown" data-wow-duration="1s"
                         data-wow-delay="0.5s">
                         <h1 class="mb-5">CONTACT</h1>
-                        <p class="mb-5">Lorem ipsum dolor sit amet, alia honestatis an qui, ne soluta nemore eripuit
-                            sed. Falli
-                            exerci aperiam ut his, prompta feugiat usu minimum delicata.</p>
+                        <p class="mb-5">Feel free to contact us for any queries or suggestions.</p>
                     </div>
-                </div>
             </div>
             <div class="row mb-5 contact-row">
                 <div class="col-md-4">
@@ -3745,8 +3749,7 @@
                             <h5>Address</h5>
                         </div>
                         <div class="contact-block-content">
-                            <p>Level 5,
-                                Chennai</p>
+                            <p>St Joseph's Group of Institutions, Semmancherry, Chennai, Tamil Nadu</p>
                         </div>
                     </div>
                 </div>
@@ -3800,9 +3803,6 @@
                                 class="fab fa-linkedin-in"></i></a>
 
                         <!-- Pinterest -->
-                        <a class="btn btn-primary btn-floating me-2" data-mdb-ripple-color="dark"
-                            style="background-color: #c61118;" href="#!" role="button"><i
-                                class="fab fa-pinterest"></i></a>
                     </div>
                 </div>
             </div>
@@ -3843,6 +3843,7 @@
                 </div>
             </div>
         </div>
+        <footer>@All Rights Reserved</footer>
     </section>
     <!-- SECTION - 9 END  -->
 

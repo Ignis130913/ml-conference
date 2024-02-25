@@ -1,6 +1,6 @@
 $(window).scroll(function () {
   if ($(window).scrollTop() >= 50) {
-    $(".main_nav-bar").css("background", "#0f1726");
+    $(".main_nav-bar").css("background", "#000");
   } else {
     $(".main_nav-bar").css("background", "transparent");
   }

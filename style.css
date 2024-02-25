@@ -6,7 +6,7 @@
   --primaryFontWeight: 500;
   --primaryTransition: all 0.3s linear;
   --primaryHoverColor: rgb(27, 208, 126);
-  --primaryBackground: #191919;
+  --primaryBackground: #000;
   --primaryOpacity: 1;
   --secondaryColor: #777;
   --secondaryFont: "Poppins", sans-serif;
@@ -117,6 +117,17 @@ body {
 .active-link {
   color: var(--primaryHoverColor) !important;
 }
+#video-background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover !important;
+}
 @media screen and (max-width: 376px){
   video{
     width: 405px !important;
@@ -133,7 +144,7 @@ body {
 @media screen and (max-width: 991px) {
   .main_nav-bar {
     width: 100% !important;
-    background: #0f1726 !important;
+    background: #0f1726;
     border-bottom: 2px solid var(--primaryHoverColor);
   }
 
@@ -186,7 +197,6 @@ body {
   min-height: 100vh;
   position: relative;
   /* background: url("./Images/Background/bg1.jpg"); */
-  background-color: #000;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -553,13 +563,43 @@ header {
 }
 
 
+#schedule,#table{
+  color: white;
+}
 
+#t-cont table{
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
 
 /* about card */
 
 
+.typewriter p {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .5em solid black; /* The typwriter cursor */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 100s steps(40, end) infinite,
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  5% { border-color: orange; }
+}
+
 .about-container {
-  background-color: #fff;
+  
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
@@ -567,7 +607,12 @@ header {
   max-width: 1300px; /* Adjust the maximum width as needed */
   margin: 20px auto; /* Auto margin to horizontally center the card and add margin around it */
 }
-
+#abt-h2{
+  font-size: 8vh !important;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 8vh;
+}
 .about-container:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -598,11 +643,12 @@ header {
   font-size: 24px; /* Reduce the font size of the heading */
   font-weight: 700;
   margin-bottom: 10px; /* Reduce margin bottom of the heading */
-  color: #333;
+  color: #fff;
 }
 
 .about__content p {
   font-size: 14px; /* Reduce the font size of the paragraph */
+  color: white;
 }
 @keyframes typing {
   from { width: 0 }
@@ -620,7 +666,7 @@ header {
 .statistics__item {
   text-align: center;
   margin-bottom: 10px; /* Reduce the margin bottom of the statistics item */
-  background-color: #fff;
+  background-color: #000;
   padding: 15px; /* Adjust padding to reduce the inner space */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -1006,7 +1052,7 @@ header {
 
 /* SECTION - 4 START */
 .speakers {
-  background: rgb(15, 23, 38);
+  
   min-height: calc(100vh - 100px);
   font-family: "Raleway";
 }
@@ -1602,7 +1648,7 @@ header {
 /* SECTION - 9 START */
 .contact {
   min-height: calc(100vh - 100px);
-  background: #212739;
+  
   color: #fff;
   text-align: center;
 }
